@@ -37,6 +37,7 @@
 .logo img{
     height: 65px;
     width: 80px;
+    object-fit: contain;
 }
 
 .border {
@@ -582,7 +583,7 @@ input {
 @media (max-width:560px) {
     .header {
 
-        height: 50px;
+        height: 60px;
         /* background-color: red; */
         flex-direction: column;
         display: block;
@@ -597,15 +598,12 @@ input {
     }
 
     .logo {
-        height: 50px;
+        height: 60px;
         width: 100%;
         justify-content: space-between;
         align-items: center;
         /* background-color: yellow; */
     }
-
-
-
 
 
     .menu {
@@ -615,10 +613,12 @@ input {
     .navigation {
         width: 100%;
         height: auto;
+        margin: 0;
         margin-top: 20px;
     }
 
     .utils {
+        margin: 0;
         width: 70%;
     }
 
@@ -627,6 +627,10 @@ input {
         align-items: center;
         row-gap: 5px;
         height: auto;
+    }
+
+    .nav-links {
+        width: 100%;
     }
 
     .nav-links>.nav-link {
